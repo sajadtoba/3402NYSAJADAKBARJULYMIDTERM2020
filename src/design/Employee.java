@@ -6,6 +6,7 @@ public interface Employee {
 	has been declared in below. you need to brainstorm to add more methods to meet the business requirements.
 	*/
 	//please read the following method and understand the business requirements of these following methods
+
 	//and then implement these in a concrete class.
 	
 	//employeeId() will return employee id.
@@ -22,5 +23,12 @@ public interface Employee {
 	
 	//employee benefit
 	public void benefitLayout();
+	// employee bonus
+	public void bonus();
+
+
+
+
+
 
 }
