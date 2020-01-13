@@ -1,5 +1,7 @@
 package math.problems;
 
+import java.util.Arrays;
+
 public class Fibonacci {
     public static void main(String[] args) {
          /*
@@ -8,5 +10,19 @@ public class Fibonacci {
          */
 
 
+        int fibo[] = new int[33];
+        for (int i = 0; i < 33; i++) {
+            if (i < 2) {
+                fibo[i] = i;
+            } else {
+                fibo[i] = fibo[i - 2] + fibo[i - 1];
+
+            }
+        }
+        System.out.println(Arrays.toString(fibo));
     }
 }
+
+
+
+

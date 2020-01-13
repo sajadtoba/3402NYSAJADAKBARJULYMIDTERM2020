@@ -31,8 +31,6 @@ int number = 5; // it is the number to calculate factorial f
         for(int j =1; j<= value; j++) {
             flag = flag * j;
         }
-
-
         System.out.println("Today I am Using iteration");
     System.out.println("Factorial of" +number+"is"+ fact);
 

@@ -1,5 +1,7 @@
 package datastructure;
 
+import java.util.*;
+
 public class UseMap {
 
 	public static void main(String[] args) {
@@ -10,6 +12,39 @@ public class UseMap {
 		 *
 		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
 		 */
+
+		List<String> citOFBD = new ArrayList<>();
+		citOFBD.add("Germany");
+		citOFBD.add("France");
+		citOFBD.add("Spain");
+		citOFBD.add("Itly");
+		List<String> stateOfUSA = new ArrayList<>();
+		stateOfUSA.add("New York");
+		stateOfUSA.add("Texas");
+		stateOfUSA.add("Marryland");
+		stateOfUSA.add("Florida");
+		List<String>cityofUK = new ArrayList<>();
+		cityofUK.add("London");
+		cityofUK.add("Manchaster");
+		cityofUK.add("Liverpool");
+		Map<String, List<String>> list = new HashMap<>();
+		list.put("BD", citOFBD);
+		list.put("UK", cityofUK);
+		list.put("USA",stateOfUSA);
+		System.out.println("");
+		System.out.println("Printout the values using for each loop.....");
+		for(Map.Entry<String,List<String>> st : list.entrySet()) {
+			System.out.println(st.getKey()+ " ........>" +st.getValue());;
+
+		}
+		System.out.println("");
+		System.out.println("Printout the values iterator.......");
+		Set set = list.entrySet();
+		Iterator it = set.iterator();
+		while (it.hasNext()) {
+			System.out.println(it.next());
+		}
+
 
 	}
 
