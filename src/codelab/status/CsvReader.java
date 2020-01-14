@@ -38,9 +38,12 @@ public class CsvReader {
             e.printStackTrace();
         }
         Collections.sort(roster);
+
+
+
         for(Trainee student:roster) {
             if (student.getNumberOfExercisesSolved()>=600) {
-                System.out.print("You did pretty good-->                    ");
+                System.out.print("You have done excellent                        ");
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
             } else if (student.getNumberOfExercisesSolved()>=500 && student.getNumberOfExercisesSolved()<600) {
                 System.out.print("You could do little better-->             ");
@@ -62,7 +65,28 @@ public class CsvReader {
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
             }
         }
+        int size = roster.size();
+        int total =0;
+        for(Trainee tr1: roster) {
+            total += tr1.getNumberOfExercisesSolved();
+        }
+        System.out.println(" the average number of problems solved                     :"+total/size);
 
+
+
+//    double total = 0;
+//
+//    public static double findAverage(List <Trainee> traineesArraysList) {
+//        int count = traineesArraysList.size();
+//        for (Trainee st:traineesArraysList){
+//            total= total+ roster.();
+//            return  total/count;
+//            double average = findAverage(students);
+//            System.out.println("Average "+average);
+
+
+
+        }
     }
 
-}
+

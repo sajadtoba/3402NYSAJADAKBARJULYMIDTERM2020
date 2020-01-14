@@ -54,7 +54,7 @@ public class Sort {
     }
     
 
-    public int [] mergeSort(int [] array){
+    public int [] mergeSort(int[] array, int i, int i1){
         int [] list = array;
         //implement here
         
@@ -83,7 +83,7 @@ public class Sort {
     }
 
 
-    public int [] bucketSort(int [] array){
+    public int [] bucketSort(int[] array, int i){
         int [] list = array;
         //implement here
         
