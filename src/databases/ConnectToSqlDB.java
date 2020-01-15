@@ -30,7 +30,9 @@ public class ConnectToSqlDB {
         return prop;
     }
 
-    public static Connection connectToSqlDatabase() throws IOException, SQLException, ClassNotFoundException {
+    //  Created the Connection
+
+    public static Connection connectToSqlDatabase() throws IOException, SQLException, ClassNotFoundException {  // Created the connection
         Properties prop = loadProperties();
         String driverClass = prop.getProperty("MYSQLJDBC.driver");
         String url = prop.getProperty("MYSQLJDBC.url");
@@ -41,6 +43,7 @@ public class ConnectToSqlDB {
         System.out.println("Database is connected");
         return connect;
     }
+// .......................................  //................................................
 
     public List<String> readDataBase(String tableName, String columnName)throws Exception{
         List<String> data = new ArrayList<String>();
@@ -73,6 +76,7 @@ public class ConnectToSqlDB {
 
         }
     }
+// ......................................//.....................................................
 
     private List<String> getResultSetData(ResultSet resultSet2, String columnName) throws SQLException {
         List<String> dataList = new ArrayList<String>();
@@ -105,7 +109,7 @@ public class ConnectToSqlDB {
             e.printStackTrace();
         }
     }
-
+// .............................//.................................................................
     public void insertDataFromStringToSqlTable(String ArrayData, String tableName, String columnName)
     {
         try {
@@ -121,6 +125,9 @@ public class ConnectToSqlDB {
             e.printStackTrace();
         }
     }
+    //...................................//................................. //.....................
+    //........................................//......................................//
+
 
     public List<String> directDatabaseQueryExecute(String passQuery,String dataColumn)throws Exception{
         List<String> data = new ArrayList<String>();
@@ -137,6 +144,8 @@ public class ConnectToSqlDB {
         }
         return data;
     }
+
+    // ........................//..........................................................................
 
     public void insertDataFromArrayListToSqlTable(List<Student> list, String tableName, String columnName)
     {
@@ -160,6 +169,8 @@ public class ConnectToSqlDB {
             e.printStackTrace();
         }
     }
+    //.............................................................. //..............................
+
 
 
     public void insertProfileToSqlTable(String tableName, String columnName1, String columnName2)
@@ -180,6 +191,7 @@ public class ConnectToSqlDB {
             e.printStackTrace();
         }
     }
+// ................................//.............................................
 
     public static List<User> readUserProfileFromSqlTable()throws IOException, SQLException, ClassNotFoundException{
         List<User> list = new ArrayList<>();

@@ -35,17 +35,17 @@ public class DataReader {
 			fr = new FileReader((textFile));
 
 		} catch (Exception ex) {
-			System.out.println("System was not able to find attached file");
+			System.out.print("System was not able to find attached file");
 		}
 		try {
 			br = new BufferedReader((fr));
 			while ((line = br.readLine()) != null ){
-				System.out.println(line);
+				System.out.print(line);
 				store = line;
 
 			}
 		} catch (Exception ex) {
-			System.out.println("System was not able to read attachec file");
+			System.out.print("System was not able to read attachec file");
 		}
 		String[] storyArray = store.split("");
 		Stack<String> myStack = new Stack<String>();

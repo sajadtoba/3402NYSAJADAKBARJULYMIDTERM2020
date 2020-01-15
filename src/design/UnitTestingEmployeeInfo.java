@@ -29,7 +29,14 @@ public class UnitTestingEmployeeInfo {
         boolean actualResult = Anagram.areAnagram("Bob", "joe");
         Assert.assertEquals(expectedResult, actualResult);
 
+
+
+
     }
+
+// public static void main(String[] args) {
+// System.out.println("I have two test cases are passed and one is failed");
+//   }
 
 
 }
