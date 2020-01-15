@@ -10,22 +10,24 @@ public class Fibonacci {
          */
 
 
-         public static void fibonacci(){
-
-        }
 
 
-//
-//        int fibo[] = new int[33];
-//        for (int i = 0; i < 33; i++) {
-//            if (i < 2) {
-//                fibo[i] = i;
-//            } else {
-//                fibo[i] = fibo[i - 2] + fibo[i - 1];
-//
-//            }
-//        }
-//        System.out.println(Arrays.toString(fibo));
+             int a = 0;
+             int b = 1;
+             int c;
+
+        System.out.print(a + " " + b);
+             for (int i=3; i<=40;i++)
+             {
+                 c =a+b;
+                 System.out.print((" " +c));
+                 a=b;
+                 b=c;
+             }
+
+
+
+
     }
 }
 
