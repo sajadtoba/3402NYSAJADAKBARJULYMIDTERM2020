@@ -68,13 +68,22 @@ public class UseArrayList {
 
 
 		try{
-			connection = DriverManager.getConnection(url,userID,password);
-			statement = connection.createStatement();
-			String query1 = "insert into arraylist(id, club)values('10','Black history');";
-			String query2 = "insert into arraylist(id, club)values('7','SpidermanII');";
-			String query3 = "insert into arraylist(id, club)values('8','Lovly Boy');";
+			 connection = DriverManager.getConnection(url,userID,password);
+			 statement = connection.createStatement();
+
+			 ArrayList2 dance = new ArrayList2("15","God is great");
+
+			//String query1 = "insert into arraylist2(id, club)values('11','white Girl');";
+
+			String query1 = "insert into arraylist2(id,club)"+"Values('"+dance.getId()+"','"+dance.getClub()+"');";
+
+
+
+			String query2 = "insert into arraylist2(id, club)values('16','SpidermanIII');";
+			//String query3 = "insert into arraylist(id, club)values('8','Lovly Boy');";
 			statement.execute(query1);
-			//statement.execute(query1, "" +query2+,""+query3);
+			statement.execute(query2);
+			//statement.execute(query1, "" +query2+, "" +query3);
 			System.out.println("extra movie added");
 		}catch(SQLException ex){
 			ex.printStackTrace();
