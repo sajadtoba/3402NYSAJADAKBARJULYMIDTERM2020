@@ -70,10 +70,10 @@ public class UseArrayList {
 		try{
 			connection = DriverManager.getConnection(url,userID,password);
 			statement = connection.createStatement();
-			String query1 = "insert into arraylist(id, club)values('9','Great love too');";
+			String query1 = "insert into arraylist(id, club)values('10','Black history');";
 			String query2 = "insert into arraylist(id, club)values('7','SpidermanII');";
 			String query3 = "insert into arraylist(id, club)values('8','Lovly Boy');";
-			statement.execute(query3);
+			statement.execute(query1);
 			//statement.execute(query1, "" +query2+,""+query3);
 			System.out.println("extra movie added");
 		}catch(SQLException ex){
