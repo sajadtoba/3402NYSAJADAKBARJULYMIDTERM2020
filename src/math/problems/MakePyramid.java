@@ -1,4 +1,4 @@
-package math.problems;
+package math.problems;  // ....................Done
 
 public class MakePyramid {
     public static void main(String[] args) {

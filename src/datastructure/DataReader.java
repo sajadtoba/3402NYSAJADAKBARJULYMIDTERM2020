@@ -1,4 +1,4 @@
-package datastructure;
+package datastructure;    // ......................Done
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -45,17 +45,23 @@ public class DataReader {
 
 			}
 		} catch (Exception ex) {
-			System.out.print("System was not able to read attachec file");
+			System.out.print("System was not able to read attachecd file at all");
 		}
+
 		String[] storyArray = store.split("");
+
 		Stack<String> myStack = new Stack<String>();
 		List<String> myList = new LinkedList<String>();
 		for (String element : storyArray) {
 			myStack.add(element);
 			myStack.push(element);
 		}
+
+
 		System.out.println("The LinkedList LIFO");
+
 		Iterator<String> it = myList.iterator();
+
 		while (it.hasNext()) {
 			System.out.println(it.next() + "");
 		}

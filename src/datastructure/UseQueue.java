@@ -1,4 +1,4 @@
-package datastructure;
+package datastructure;         // ..................done
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -12,8 +12,9 @@ public class UseQueue {
 		 * Use For Each loop and while loop with Iterator to retrieve data.
 		 * 
 		 */
+// it is exact lke ArrayList
 
-		 Queue<String> queue = new LinkedList<>();
+		Queue<String> queue = new LinkedList<>();
 		System.out.println("Adding values using adding methods too.....");
 		queue.add("Germany");
 		queue.add(("France"));
@@ -28,14 +29,20 @@ public class UseQueue {
 		}
 
 		System.out.println(" ");
-		System.out.println("Printout the values using iterator.....");
+
+		// used the while loop
+
+		System.out.println("Print  out the values using iterator..... by useing java keyword Iterator ");
 
 		Iterator it = queue.iterator();
+
 				while(it.hasNext()){
+
 					System.out.println(it.next());
 	}
 
 	System.out.println(" ");
+
 System.out.println("Removing the values Using remove methods.....");
 
 		System.out.println(queue.remove("Germany"));
@@ -44,6 +51,7 @@ System.out.println("Removing the values Using remove methods.....");
 
 
 		System.out.println("Printout the values using for each loop.....");
+
 		for(String st: queue){
 
 			System.out.println(st);

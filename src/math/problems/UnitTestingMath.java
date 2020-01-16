@@ -1,10 +1,10 @@
 package math.problems;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import string.problems.Anagram;
+//import org.testng.Assert;
+//import org.testng.annotations.Test;
+//import string.problems.Anagram;
 
-public class  UnitTestingMath {
+//public class  UnitTestingMath {
 
 
     // public static void main(String[] args) {
@@ -12,29 +12,34 @@ public class  UnitTestingMath {
 
     //....................
 
-    @Test
-    public void testWordsAreAnagram(){
-        boolean expectedResult = true;
-        boolean actualResult = Anagram.areAnagram("Sajjad","FaHID");
-        Assert.assertEquals(expectedResult,actualResult);}
+//    @Test
+//
+//
+//
+//
+//    //@Test
+//    public void testWordsAreAnagram(){
+//        boolean expectedResult = true;
+//        boolean actualResult = Anagram.areAnagram("Sajjad","FaHID");
+//        Assert.assertEquals(expectedResult,actualResult);}
+//
+//   // @Test
+//    public void testWordsAreAnagramPnt(){
+//        boolean expectedResult = true;
+//        boolean actualResult = Anagram.areAnagram("REHMAN","REHMAN");
+//        Assert.assertEquals(expectedResult,actualResult);
+//    }
+//
+//   // @Test
+//    public void testWordsAreNotAnagram() {
+//        boolean expectedResult = true;
+//        boolean actualResult = Anagram.areAnagram("PNT", "pnt");
+//        Assert.assertEquals(expectedResult, actualResult);
+//
+//    }
+//
 
-    @Test
-    public void testWordsAreAnagramPnt(){
-        boolean expectedResult = true;
-        boolean actualResult = Anagram.areAnagram("REHMAN","REHMAN");
-        Assert.assertEquals(expectedResult,actualResult);
-    }
-
-    @Test
-    public void testWordsAreNotAnagram() {
-        boolean expectedResult = true;
-        boolean actualResult = Anagram.areAnagram("PNT", "pnt");
-        Assert.assertEquals(expectedResult, actualResult);
-
-    }
 
 
 
-
-
-}
+//}

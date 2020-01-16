@@ -1,4 +1,4 @@
-package datastructure;
+package datastructure; // ...................done
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -21,7 +21,7 @@ public class UseArrayList {
 
 		// adding values in the Array list
 
-		movieArrayList.add(" The beautiful and the best");
+		movieArrayList.add(" The beautiful and the best movie in the town");
 		movieArrayList.add("Loveforever");
 		movieArrayList.add("Dance on the floor");
 		movieArrayList.add("SpiderMan");
@@ -38,6 +38,7 @@ public class UseArrayList {
 		}
 		//Display available movies using for loop
 		System.out.println(" list of available movies");
+
 		movieArrayList.forEach((m) -> System.out.println("Available: " +m));
 
 		// for loop
@@ -58,29 +59,37 @@ public class UseArrayList {
 //			System.out.println(movieArrayList.get(i));
 //		}
 
+		// 1st three initialized the variables
 
 		String url = "jdbc:mysql://localhost:3306/UseArrayList?Timezone=UTC";
 		String userID = "root";
 		String password ="cAt@123";
 		//Connection connection = DriverManager.getConnection(url,userID,password);
+		// Initilized the Variables and given the value null because they don't have the value
+
 		Connection connection = null;
 		Statement statement =null;
+
+		// used the try and catch block
 
 
 		try{
 			 connection = DriverManager.getConnection(url,userID,password);
 			 statement = connection.createStatement();
 
-			 ArrayList2 dance = new ArrayList2("17","God is great");
+			 // Used the Getter and Setter Method
 
-			String query2 = "insert into arraylist2(id, club)values('18','white Girl');";
+			 ArrayList2 dance = new ArrayList2("17","God is great");
 
 			String query1 = "insert into arraylist2(id,club)"+"Values('"+dance.getId()+"','"+dance.getClub()+"');";
 
+			// Updated the Query
+
 			String query= "update arraylist2 set club = 'I love to dance' where id = '8'";
 
+			// Insert the value into SQl by using JDBC connection
 
-
+			String query2 = "insert into arraylist2(id, club)values('18','white Girl');";
 
 
 			//String query2 = "insert into arraylist2(id, club)values('18','SpidermanIII');";
@@ -90,11 +99,13 @@ public class UseArrayList {
 			statement.execute(query1);
 			statement.execute(query2);
 			//statement.execute(query1, "" +query2+, "" +query3);
+
 			System.out.println("extra movie added");
 		}catch(SQLException ex){
 			ex.printStackTrace();
 			System.out.println("Something might not ");
 		}
+		// Close the connection and statement
 
 		finally {
 			statement.close();
