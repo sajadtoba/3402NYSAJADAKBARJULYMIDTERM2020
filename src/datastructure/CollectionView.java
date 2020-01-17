@@ -32,7 +32,9 @@ public static void main(String[] args) {
         System.out.println(map);
         System.out.println(map.get(5));
         map.remove(4);
+
         System.out.println(map);
+
         // Now time to see if the hashmap contains the value or not
         //Test the case true or false
         System.out.println(map.containsValue("Demver"));

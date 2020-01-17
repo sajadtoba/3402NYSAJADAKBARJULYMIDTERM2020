@@ -1,4 +1,4 @@
-package string.problems;
+package string.problems;   // Done......................
 
 
 import com.sun.org.apache.bcel.internal.generic.ARETURN;
@@ -32,7 +32,8 @@ public class Anagram {
 
     }
 
-    // Outside the main Method
+    // ..........................Outside the main Method.......................................
+    //........................                           ........................................
 
     public static boolean areAnagram(String word1, String word2) {
         if (word1.length() != word2.length()) {
@@ -59,11 +60,7 @@ public class Anagram {
 //        // Now I will demonstreate with the different one to see the compare if my code is correct
 //        System.out.println(areAnagram("Sajad","Sajjad"));
 //    }
-//
 
-//
-//
-//
 //            // Outside main method we can do the unit testing
 //we create the method
 
@@ -73,22 +70,17 @@ public void testWordsAreAnagram() {
     boolean actualResult = Anagram.areAnagram("Act", "mike");
     Assert.assertEquals(expectedResult, actualResult);
 }
-}
 
+        @Test
+        public void testWordsAreAnagramPnt(){
+            boolean expectedResult = true;
+            boolean actualResult = Anagram.areAnagram("Act","Act");
+            Assert.assertEquals(expectedResult,actualResult);
+    }
 
-       // Assert.assertEquals(expectedResult,actualResult);}
-//////
-////        @Test
-////        public void testWordsAreAnagramPnt(){
-////            boolean expectedResult = true;
-////            boolean actualResult = Anagram.areAnagram("Act","Cat");
-////            Assert.assertEquals(expectedResult,actualResult);
-////    }
-////
-////    @Test
-////    public void testWordsAreNotAnagram() {
-////        boolean expectedResult = true;
-////        boolean actualResult = Anagram.areAnagram("Bob", "joe");
-////        Assert.assertEquals(expectedResult, actualResult);
-//
-//    }
+    @Test
+    public void testWordsAreNotAnagram() {
+        boolean expectedResult = true;
+        boolean actualResult = Anagram.areAnagram("Bob", "joe");
+        Assert.assertEquals(expectedResult, actualResult);
+} }

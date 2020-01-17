@@ -1,4 +1,4 @@
-package json.parser;
+package json.parser; // Done......................
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -62,6 +62,7 @@ public class JsonReaderUtil {
             }
         }
         //Print to the console.
+
         for(Employee entry:empList){
             System.out.println(entry.getEmpEmail()+" "+entry.getEmpName()+" "+entry.getSalary()+" "+entry.getDepartment());
         }

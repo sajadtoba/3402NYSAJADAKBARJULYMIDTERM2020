@@ -1,4 +1,4 @@
-package codelab.status;
+package codelab.status;    // done........................
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -65,12 +65,17 @@ public class CsvReader {
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
             }
         }
+
         int size = roster.size();
+
         int total =0;
+
         for(Trainee tr1: roster) {
             total += tr1.getNumberOfExercisesSolved();
+
         }
-        System.out.println(" the average number of problems solved                     :"+total/size);
+
+        System.out.println(" the average number of problems solved                     :"   +total / size);
 
 
 

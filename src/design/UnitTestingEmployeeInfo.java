@@ -1,13 +1,10 @@
-package design;
-
-//import org.testng.Assert;
-//import org.testng.annotations.Test;
-//import string.problems.Anagram;
+package design; // Done................................................
 
 import org.junit.Assert;
 import org.junit.Test;
 import string.problems.Anagram;
 
+import javax.xml.namespace.QName;
 import java.lang.reflect.AnnotatedArrayType;
 
 public class UnitTestingEmployeeInfo {
@@ -21,36 +18,53 @@ public class UnitTestingEmployeeInfo {
 
    // i do not know if I can run all tests in one time. But I am allowed to run each test one by one.
 
-    @Test
-    public void testWordsAreAnagram(){
-        boolean expectedResult = true;
-        boolean actuarresult= Anagram.areAnagram("CAT","CAT");
-        Assert.assertEquals(expectedResult,actuarresult);
-    }
+    //..........................Outside the Main Method.........................................//
+
+// This is failed Test......................................Test.......................Failed Test..................
+   EmployeeInfo testobj = new EmployeeInfo("tester",9876,"Finance",120000,'M',"1990/07/30");
 
     @Test
-    public void testWordsAreAnagram2(){
-        boolean expectedResult = true;
-        boolean actualResult = Anagram.areAnagram("CATT","CAT");
-        Assert.assertEquals(expectedResult,actualResult);}
-
-    @Test
-    public void testWordsAreAnagramPnt1(){
-        boolean expectedResult = true;
-        boolean actualResult = Anagram.areAnagram("Act","Cat");
-        Assert.assertEquals(expectedResult,actualResult);
-    }
-
-    @Test
-    public void testWordsAreNotAnagram() {
-        boolean expectedResult = true;
-        boolean actualResult = Anagram.areAnagram("Bob", "joe");
-        Assert.assertEquals(expectedResult, actualResult);
+    public void employeeIdTestPositive(){
+       int exepectedResult = 1234;
+       int actualResult = testobj.employeeId();
+       Assert.assertEquals(1234,testobj.employeeId());
 
     }
-//
+    // This is Passed Test....................  //...................
+
+    EmployeeInfo testobj2 = new EmployeeInfo("tester",1234,"Finance",120000,'M',"1990/07/30");
+
+    @Test
+    public void employeeIdTestPositive2(){
+        int exepectedResult = 1234;
+        int actualResult = testobj2.employeeId();
+        Assert.assertEquals(1234,testobj2.employeeId());
+
+    }
+
+    // This is...............................
+
+    EmployeeInfo testobj3 = new EmployeeInfo("tester",2345,"Finance",120000,'M',"1990/07/30");
+
+    @Test
+    public void employeeIdTestPositive3(){
+        String exepectedResult = "Fince";
+        String actualResult = testobj3.getDepartment();
+        Assert.assertEquals("Finance",testobj3.getDepartment());
+
+    }
+//......................................................///.........................
+EmployeeInfo testobj4 = new EmployeeInfo("tester",9876,"Finance",120000,'M',"1990/07/30");
+
+    @Test
+    public void employeeIdTestPositive4(){
+        String expectedResult = "tester";
+        String actualResult = testobj4.getName();
+        //Assert.assertEquals(expected:"tester",testobj4.getName());
+        Assert.assertEquals("tester12346",testobj4.getName());
+    }
+// This is failed test......................................///...............Failed Test..............
+
+    }
 
 
-
-
-}
