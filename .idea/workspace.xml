@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="584f81b2-31cb-4576-bc72-6d673ff767f2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/design/EmployeeInfo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/design/FortuneEmployee1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/Numbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/Numbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/design/AbstractEmployee1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design/AbstractEmployee1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/design/Employee1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design/Employee1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/design/EmployeeInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design/EmployeeInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/design/FortuneEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design/FortuneEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/problems/DetermineLargestWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/problems/DetermineLargestWord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/problems/DuplicateWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/problems/DuplicateWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/databases/UnitTestConnectDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/databases/UnitTestConnectDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/UseArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructure/UseArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design/UnitTestingEmployeeInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design/UnitTestingEmployeeInfo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +58,7 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DuplicateWord">
+  <component name="RunManager" selected="Application.UnitTestConnectDB">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -124,13 +118,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Numbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithm.Numbers" />
+    <configuration name="UnitTestConnectDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="databases.UnitTestConnectDB" />
       <module name="CodingExamJuly2019" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="algorithm.*" />
+          <option name="PATTERN" value="databases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,19 +155,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Numbers" />
       <item itemvalue="Application.FortuneEmployee1" />
       <item itemvalue="Application.FortuneEmployee" />
       <item itemvalue="Application.DetermineLargestWord" />
       <item itemvalue="Application.DuplicateWord" />
+      <item itemvalue="Application.UnitTestConnectDB" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UnitTestConnectDB" />
         <item itemvalue="Application.DuplicateWord" />
         <item itemvalue="Application.DetermineLargestWord" />
         <item itemvalue="Application.FortuneEmployee1" />
         <item itemvalue="Application.FortuneEmployee" />
-        <item itemvalue="Application.Numbers" />
       </list>
     </recent_temporary>
   </component>
@@ -212,26 +206,26 @@
       <screen x="0" y="23" width="2048" height="1177" />
     </state>
     <state x="567" y="342" key="DetectedRootsChooserDialog/0.23.2048.1177@0.23.2048.1177" timestamp="1579043139260" />
-    <state width="1661" height="172" key="GridCell.Tab.0.bottom" timestamp="1579314359719">
+    <state width="1661" height="172" key="GridCell.Tab.0.bottom" timestamp="1579321573041">
       <screen x="0" y="23" width="2048" height="1177" />
     </state>
     <state width="2006" height="196" key="GridCell.Tab.0.bottom/0.0.2048.1280@0.0.2048.1280" timestamp="1579308889326" />
-    <state width="1661" height="172" key="GridCell.Tab.0.bottom/0.23.2048.1177@0.23.2048.1177" timestamp="1579314359719" />
-    <state width="1661" height="172" key="GridCell.Tab.0.center" timestamp="1579314359719">
+    <state width="1661" height="172" key="GridCell.Tab.0.bottom/0.23.2048.1177@0.23.2048.1177" timestamp="1579321573041" />
+    <state width="1661" height="172" key="GridCell.Tab.0.center" timestamp="1579321573041">
       <screen x="0" y="23" width="2048" height="1177" />
     </state>
     <state width="2006" height="196" key="GridCell.Tab.0.center/0.0.2048.1280@0.0.2048.1280" timestamp="1579308889325" />
-    <state width="1661" height="172" key="GridCell.Tab.0.center/0.23.2048.1177@0.23.2048.1177" timestamp="1579314359719" />
-    <state width="1661" height="172" key="GridCell.Tab.0.left" timestamp="1579314359718">
+    <state width="1661" height="172" key="GridCell.Tab.0.center/0.23.2048.1177@0.23.2048.1177" timestamp="1579321573041" />
+    <state width="1661" height="172" key="GridCell.Tab.0.left" timestamp="1579321573040">
       <screen x="0" y="23" width="2048" height="1177" />
     </state>
     <state width="2006" height="196" key="GridCell.Tab.0.left/0.0.2048.1280@0.0.2048.1280" timestamp="1579308889325" />
-    <state width="1661" height="172" key="GridCell.Tab.0.left/0.23.2048.1177@0.23.2048.1177" timestamp="1579314359718" />
-    <state width="1661" height="172" key="GridCell.Tab.0.right" timestamp="1579314359719">
+    <state width="1661" height="172" key="GridCell.Tab.0.left/0.23.2048.1177@0.23.2048.1177" timestamp="1579321573040" />
+    <state width="1661" height="172" key="GridCell.Tab.0.right" timestamp="1579321573041">
       <screen x="0" y="23" width="2048" height="1177" />
     </state>
     <state width="2006" height="196" key="GridCell.Tab.0.right/0.0.2048.1280@0.0.2048.1280" timestamp="1579308889326" />
-    <state width="1661" height="172" key="GridCell.Tab.0.right/0.23.2048.1177@0.23.2048.1177" timestamp="1579314359719" />
+    <state width="1661" height="172" key="GridCell.Tab.0.right/0.23.2048.1177@0.23.2048.1177" timestamp="1579321573041" />
     <state width="1661" height="404" key="GridCell.Tab.1.bottom" timestamp="1579302041372">
       <screen x="0" y="23" width="2048" height="1177" />
     </state>

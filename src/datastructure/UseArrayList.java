@@ -60,6 +60,9 @@ public class UseArrayList {
 //		}
 
 		// 1st three initialized the variables
+		// ...............*..................................................
+
+
 
 		String url = "jdbc:mysql://localhost:3306/UseArrayList?Timezone=UTC";
 		String userID = "root";
@@ -100,7 +103,7 @@ public class UseArrayList {
 			statement.execute(query2);
 			//statement.execute(query1, "" +query2+, "" +query3);
 
-			System.out.println("extra movie added");
+			System.out.println("extra value is added");
 		}catch(SQLException ex){
 			ex.printStackTrace();
 			System.out.println("Something might not ");
@@ -114,6 +117,6 @@ public class UseArrayList {
 
 
 
-	}
+	}   // Belong to Main Method
 
-}
+}   // Belong to Main class
