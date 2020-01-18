@@ -246,7 +246,9 @@ public static double calculateEmployeeBonus(int performance, double salary) {
 		String joiningDate = sc.nextLine();
 		System.out.println("Please enter today's date in format (example: August,2017): ");
 		String todaysDate = sc.nextLine();
+
 		String convertedJoiningDate = DateConversion.convertDate(joiningDate);
+
 
 
 		String convertedTodaysDate = DateConversion.convertDate(todaysDate);
